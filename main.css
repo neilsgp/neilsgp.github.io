@@ -1,0 +1,38 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
+@import url(http://fonts.googleapis.com/css?family=Raleway:500,700,400,300);
+
+html,body{
+  margin: 0;
+}
+
+body{
+  width: 100%;
+  height: 100%;
+}
+
+#header{  
+  background: linear-gradient(rgba(66, 147, 152, 0.9), rgba(25, 24, 52, 0.9)),url('header-image.jpeg') no-repeat center center;
+  background-size: cover;
+  font-family: 'Lato', sans-serif;
+  height: 400px; 
+  text-align: center;
+  color: white;}
+  #header .profile{ 
+  margin-top: 70px;}
+  #header .name{
+  text-transform: uppercase;
+  font-size: 50px;
+  letter-spacing: -1px;
+  word-spacing: 10px;
+  padding-top: 20px;
+  font-weight: lighter;}
+  #header .icons i{
+  margin: 30px 12px;
+  opacity: 0.5;
+  transition-duration:0.3s;}
+  #header .icons i:hover{
+  opacity: 1;}
+  #header .blurb{
+  font-weight: 200;
+  margin-top: 25px;}
+
