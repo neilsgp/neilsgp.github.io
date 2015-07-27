@@ -1,6 +1,8 @@
+/* Fonts */
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,900);
 
+/* Styles */
 html,body{
   margin: 0;
   background-color: #FBFBFB;
@@ -56,10 +58,18 @@ body{
   #about a:hover{
   border-bottom: 2px solid #202020;}
 
+/* Responsive styles */
 @media screen and (max-width:500px){
   #about .container{
+  font-size: 13px;
   width: 300px;
   line-height: 30px;
-  word-spacing: 7px;
+  word-spacing: -0.2px;
   }
 } 
+
+@media screen and (max-width: 400px){
+  #header .name{
+    font-size: 30px;
+  }
+}
