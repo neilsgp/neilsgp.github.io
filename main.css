@@ -28,6 +28,9 @@ body{
   word-spacing: 10px;
   padding-top: 20px;
   font-weight: lighter;}
+  #header a{
+  text-decoration: none;
+  color: white;}
   #header .icons i{
   margin: 30px 12px;
   opacity: 0.5;
@@ -40,14 +43,16 @@ body{
 
 #about{}
   #about .container{
+  display: flex;
   color: #202020;
-  width: 500px;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 16px;
   text-align: justify;
   line-height: 35px;
-  padding: 2em 0 2em 0;}
+  padding-top: 2em;}
+  #about .description{ 
+  width: 500px;}
   #about a{
   color: #202020;
   text-decoration: none;
@@ -62,6 +67,13 @@ body{
   font-size: 16px;
   line-height: 35px;
   width: 500px;}
+
+/* 3-column grid using 840px full width */
+.grid3col .column { width: 260px; margin-left: 30px; }
+.column { float: left; }
+.column.first, .column.last { margin-left: 0 !important; }
+.column.last { float: right !important; }
+
 
 /* Responsive styles */
 @media screen and (max-width:500px){
@@ -81,7 +93,7 @@ body{
   html,body{
     overflow-x:hidden; 
   }
-  
+
   #header .name{
     font-size: 30px;}
   #header .blurb{
