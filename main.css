@@ -43,16 +43,16 @@ body{
 
 #about{}
   #about .container{
-  text-align: center;
   color: #202020;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 16px;
-  text-align: justify;
   line-height: 35px;
-  padding-top: 2em;}
+  padding-top: 2em;
+  text-align: left;}
   #about .description{ 
-  width: 500px;}
+  width: 700px;}
+  
   #about a{
   color: #202020;
   text-decoration: none;
@@ -68,13 +68,6 @@ body{
   line-height: 35px;
   width: 500px;}
 
-/* 3-column grid using 840px full width */
-.grid3col .column { width: 260px; margin-left: 30px; }
-.column { float: left; }
-.column.first, .column.last { margin-left: 0 !important; }
-.column.last { float: right !important; }
-
-
 /* Responsive styles */
 @media screen and (max-width:500px){
   html,body{
@@ -87,6 +80,9 @@ body{
   line-height: 30px;
   word-spacing: -0.2px;
   }
+
+  #header .blurb{
+  font-weight: 300;}
 } 
 
 @media screen and (max-width: 400px){
@@ -96,6 +92,4 @@ body{
 
   #header .name{
     font-size: 30px;}
-  #header .blurb{
-    font-weight: 300;}
 }
