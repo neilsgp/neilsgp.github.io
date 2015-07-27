@@ -43,7 +43,7 @@ body{
 
 #about{}
   #about .container{
-  display: flex;
+  text-align: center;
   color: #202020;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
