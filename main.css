@@ -13,7 +13,7 @@ body{
 }
 
 #header{  
-  background: linear-gradient(rgba(48, 79, 254, 0.9), rgba(66, 165, 245, 0.9)),url('header-image.jpeg') no-repeat center center;
+  background: linear-gradient(rgba(48, 79, 254, 0.9), rgba(66, 165, 245, 0.9)),url('header-image.jpg') no-repeat center center;
   background-size: cover;
   font-family: 'Lato', sans-serif;
   height: 400px; 
@@ -44,14 +44,15 @@ body{
 #about{}
   #about .container{
   color: #202020;
+  width: 600px;}
+  #about .description{  
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 35px;
   padding-top: 2em;
-  text-align: left;}
-  #about .description{ 
-  width: 700px;}
+  text-align: justify; 
+  }
   
   #about a{
   color: #202020;
@@ -66,7 +67,7 @@ body{
   font-family: 'Roboto';
   font-size: 16px;
   line-height: 35px;
-  width: 500px;}
+  width: 600px;}
 
 /* Responsive styles */
 @media screen and (max-width:500px){
@@ -74,22 +75,18 @@ body{
     overflow-x:hidden; 
   }
 
-  #about .container{
+  #about .description{
   font-size: 13px;
   width: 300px;
   line-height: 30px;
   word-spacing: -0.2px;
-  }
+  padding-left: 20px;
+  padding-right: 20px;}
 
   #header .blurb{
   font-weight: 300;}
+  #header .name{ 
+  font-size: 30px;}
+
+  #courses .container{font-size: 13px;}
 } 
-
-@media screen and (max-width: 400px){
-  html,body{
-    overflow-x:hidden; 
-  }
-
-  #header .name{
-    font-size: 30px;}
-}
