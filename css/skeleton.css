@@ -25,7 +25,9 @@
 - Media Queries
 */
 
-html{font-family: 'Quattrocento Sans', sans-serif;}
+html{font-family: 'Quattrocento Sans', sans-serif;
+border-top: 2px solid #4169e1;
+}
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .container {
