@@ -1,0 +1,45 @@
+@font-face{font-family: Brandon; src:url('../assets/fonts/brandon_re.ttf');}
+@font-face{font-family: Avenir; src:url('../assets/fonts/AvenirNextLTPro-Regular.otf');}
+
+html,body{height: 100%; width: 100%;}
+
+h1{
+  font-size: 20px;
+  font-family: 'Avenir', sans-serif;
+  color: #212121;
+} 
+
+h2{
+  font-size: 18px;
+  font-family: 'Avenir', sans-serif;
+  font-weight: lighter;
+  color: #424242;
+  margin-top: -10px;
+}
+
+p{
+  font-family: 'Avenir', sans-serif;
+  font-size: 18px;
+}
+
+.container{
+  position: relative;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#header{
+  margin-top: 50px;
+  max-width: 960px;
+  line-height: 30px;
+}
+
+#header h1{padding-top: 5px;}
+#header {max-width: 800px;}
+
+#projects{
+  top:210px;
+}
