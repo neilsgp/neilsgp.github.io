@@ -1,30 +1,22 @@
-<!DOCTYPE HTML>
-<head>
-  <!-- Responsive -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+---
+layout: default
+---
 
-  <!-- Styles -->
-  <link rel = "stylesheet" type = "text/css" href = "css/main.css"/>
-  <link rel = "stylesheet" type = "text/css" href = "css/index.css"/>
+<section>
+	<ul>
 
-  <!-- JS -->
-  <script src = "js/main.js" type = "text/js"></script>
-</head>
-<body>
-  <div class = "container">
-    <section id = "header">
-      <h1>Neil Sengupta</h1>
-      <h2>Product Designer, Front-end Engineer</h2>
-      <p>
-        Hi! I'm a sophomore studying Computer Science at University of California, San Diego. I like to craft 
-        great experiences for users. I'm learning to solve complex problems and building innovative products for scale. Meanwhile, here's my resume!
-      </p>
-    </section>
+		{% for post in site.posts %}
 
-    <section id = "projects">
-      <p>Here are some things I've worked on in the past:</p>
-    </section>
+		<li>
+			<div class="post-date">
+				<span>{{ post.date | date: "%b %d, %Y" }}</span>
+			</div>
+			<div class="title">
+				<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+			</div>
+		</li>
 
-  </div>
-</body>
-</html>
+		{% endfor %}
+
+	</ul>
+</section>
