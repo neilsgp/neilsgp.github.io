@@ -55,10 +55,10 @@ text-rendering: optimizeLegibility;}
   max-width: 700px;
   line-height: 35px;}
 
-#project1:hover{background-color: #4169e1;}
-#project2:hover{background-color: #e74c3c;}
-#project3:hover{background-color: #27ae60;}
-#project4:hover{background-color: #f39c12;}
+#project1:hover{background-color: #4169e1;-webkit-transition: 0.4s;}
+#project2:hover{background-color: #e74c3c;-webkit-transition: 0.4s;}
+#project3:hover{background-color: #27ae60;-webkit-transition: 0.4s;}
+#project4:hover{background-color: #f39c12;-webkit-transition: 0.4s;}
 
 @media screen and (max-width: 700px){
   #header .description{ 

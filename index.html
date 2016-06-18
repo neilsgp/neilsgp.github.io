@@ -8,19 +8,31 @@
   <title>Neil Sengupta</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"></link>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="css/main.css"></link>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <!-- <script type="text/javascript" src="js/instafeed.min.js"></script> -->
   <srcipt type="text/javascript" src="js/main.js"></script>
+
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-    
+
     ga('create', 'UA-79527550-1', 'auto');
     ga('send', 'pageview');
+  </script>
+
+  <script type="text/javascript">
+    var userFeed = new Instafeed({
+    get: 'user',
+    userId: f0c198088cf14853a8d0727057b19954,
+    accessToken: 'YOUR_ACCESS_TOKEN'
+    });
+    userFeed.run();
   </script>
 </head>
 <body>
@@ -42,31 +54,31 @@
           <h4><strong>Phetch</strong></h4>
           Redesigning the experience for sharing resources and managing tasks amongst people living together
           in shared spaces. <br>
-          <a href="#">Learn more →</a>
+          <a href="https://medium.com/usability-and-information-architecture-ucsd/buying-groceries-775be86d7349#.w4adz2egv">Learn more →</a>
         </div>
       </div>
       <div class = "box" id="project2">
         <div class = "content">
-          <h4><strong>Phetch</strong></h4>
-          Redesigning the experience for sharing resources and managing tasks amongst people living together
-          in shared spaces. <br>
+          <h4><strong>Ethnographic Case Study</strong></h4>
+          Findings of an ethnographic field research and case study of the way designers use Google Search to optimize their design
+          workflow.<br>
           <a href="#">Learn more →</a>
         </div>
       </div>
       <div class = "box" id="project3">
         <div class = "content">
-          <h4><strong>Phetch</strong></h4>
-          Redesigning the experience for sharing resources and managing tasks amongst people living together
-          in shared spaces. <br>
-          <a href="#">Learn more →</a>
+          <h4><strong>Friends and Food</strong></h4>
+          Designed a mobile experience to set up lunch and dinner meetings to catch up with friends by 
+          algorithmically suggesting times based on user preferences and location.<br>
+          <a href="http://friendsnfood.herokuapp.com/">Learn more →</a>
         </div>
       </div>
       <div class = "box" id="project4">
         <div class = "content">
-          <h4 id = "dash"><strong>Phetch</strong></h4>
-          Redesigning the experience for sharing resources and managing tasks amongst people living together
-          in shared spaces. <br>
-          <a href="#">Learn more →</a>
+          <h4 id = "dash"><strong>Tasker</strong></h4>
+          Designed application for groups to distribute tasks amongst members, keep track 
+          of task completion status and distribute tasks amongst members.<br>
+          <a href="https://github.com/ucsdCSE110wi16/CSE110M260T16">Learn more →</a>
         </div>
       </div>
     </section>
