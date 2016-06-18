@@ -2,11 +2,11 @@ a{
 text-decoration: none;
 color:inherit;}
 
-a:hover{ 
-border-bottom: 1px solid inherit;
-color: inherit;
-display: inline;
-padding-bottom: 10px;}
+a:hover{
+text-decoration: none; 
+border-bottom: solid 1px;
+border-color: inherit;
+display: inline;}
 
 a:visited{ 
 color: inherit;
@@ -17,7 +17,8 @@ text-decoration: none;}
   text-rendering: optimizeLegibility;
 	max-width: 100%;
   font-family: 'Merriweather', sans-serif;
-  border-top: 10px solid #202020;}
+  border-top: 10px solid #202020;
+  letter-spacing: 0.3px;}
 #header .description{ 
   margin-left: 45px;
   margin-right: 10px;
@@ -37,8 +38,9 @@ margin-top: 20px;}
   font-weight: 300;}
 
 #projects{ 
-margin-top: 180px;
+margin-top: 150px;
 max-width: 100%;
+letter-spacing: 0.3px;
 font-family: 'Merriweather', sans-serif;
 -webkit-font-smoothing: antialiased;
 text-rendering: optimizeLegibility;}
@@ -57,3 +59,12 @@ text-rendering: optimizeLegibility;}
 #project2:hover{background-color: #e74c3c;}
 #project3:hover{background-color: #27ae60;}
 #project4:hover{background-color: #f39c12;}
+
+@media screen and (max-width: 700px){
+  #header .description{ 
+    margin-left: 25px;
+    margin-right: 20px;}
+  #projects .box{ 
+    padding-left:25px;
+    padding-right: 20px;}
+}
