@@ -5,16 +5,19 @@ html,body{
   max-width: 100%;
   max-height: 100%;
   font-family: 'Yrsa', sans-serif;
+  color: #ecf0f1;
+  background-color: #202020;
+  letter-spacing: 0.2px;
 }
 
 a{
   text-decoration: none;
-  color: #000080;
+  color: #3498db;
   padding-bottom: 1px;
 }
 
 a:hover{
-  border-bottom: 1px solid #000080;
+  border-bottom: 1px solid #3498db;
 }
 
 .container{ 
@@ -36,6 +39,7 @@ a:hover{
 #header h1{
   font-size: 30px;
   letter-spacing: 0.3px;  
+  color: #3498db;
 }
 #header #blurb{
   font-size: 18px;
@@ -57,6 +61,7 @@ a:hover{
 
 #title{
   font-weight: bold;  
+  color: #3498db;
   letter-spacing: 0.5px;
 }
 
@@ -73,9 +78,9 @@ a:hover{
   margin-left: 0;
   padding-right: 10px;
   padding-left: 10px;
-  border: 1px solid #000080;
+  border: 1px solid #3498db;
   border-radius: 2px;
-  color:#000080;
+  color:#3498db;
 }
 
 #footnote{
