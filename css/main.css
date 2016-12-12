@@ -18,6 +18,7 @@ a{
 
 a:hover{
   border-bottom: 1px solid #f1c40f;
+  border-bottom-style:dotted;
 }
 
 .container{ 
@@ -42,6 +43,13 @@ a:hover{
   letter-spacing: 0.3px;  
   color: white;
 }
+.border{
+  width: 230px;
+  border-bottom: 2px solid #f1c40f;
+  padding-bottom: 10px;
+  border-bottom-style: dotted;
+}
+
 #header #blurb{
   font-size: 18px;
 }
