@@ -75,19 +75,14 @@ a:hover{
   letter-spacing: 0.5px;
 }
 
-#skills ul{
-  list-style-type: none;
-  margin:0;
-  padding: 0;
-}
-
-#skills li{
+#skills{
   font-family: 'Source Code Pro', sans-serif;
   font-size:12px;
   display: inline;
   margin-left: 0;
-  padding-right: 10px;
+  padding-right: 15px;
   padding-left: 10px;
+  margin-right: 10px; 
   border-radius: 2px;
   color: black;
   background-color: #f1c40f;

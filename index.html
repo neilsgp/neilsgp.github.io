@@ -1,4 +1,4 @@
-<html>
+<html ng-app = "portfolio">
 <head lang="en">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,13 +7,12 @@
   
   <title>Neil Sengupta</title>
   
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="css/main.css"></link>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script data-require="angular.js@1.2.x" src="http://code.angularjs.org/1.2.15/angular.js" data-semver="1.2.15"></script>
   <script src="js/main.js"></script>
-    <script>
+  <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -24,82 +23,6 @@
   </script>
 </head>
 <body>
-  <div class = "container">
-    <section id = "header">
-        <h1>Neil Sengupta<div class="border"> </div></h1>
-        <p id="blurb">I'm a 20 year old software developer studying Computer Science at UC San Diego. I'm
-        interested in Human Centered Design, Artificial Intelligence and Data Science. I worked at  
-        the San Diego Supercomputer Center last summer on Compressional Bioinformatics. <br><br>
-        I'm currently looking for software engineering opportunities in Frontend Engineering, Backend Development and Data Science.
-        Here is my <a href="Files/ResumeNew.pdf">resume</a>. Feel free to reach out to me at <a href="nesengup@ucsd.edu">nesengup@ucsd.edu</a>
-        <br><br>Here are things I've worked on in the past:
-        </p>
-    </section>
-    
-    <section id = "projects">
-        <ul>
-            <li><span id="title"><a href = "http://friendsnfood.herokuapp.com/">Friends and Food</a><div id="skills">
-                <ul>
-                  <li>Node JS</li>
-                  <li>Mongoose</li>
-                  <li>Express JS</li>
-                  <li>Sketch</li>
-                  <li>Invision</li>
-                </ul>
-              </div></span>Web application that pairs you with friends in your network to get food with based on your personalised schedule.<br>
-              
-            </li>
-
-            <li><span id="title"><a href = "http://bit.ly/2hlip8d">Taskr</a><div id="skills">
-                <ul>
-                  <li>Java</li>
-                  <li>Android SDK</li>
-                  <li>Parse</li>
-                  <li>JUnit Testing</li>
-                </ul>
-              </div></span>Android Application for task allocation and management amongst friends living in shared households.<br>
-            </li>
-
-            <li><span id="title"><a href = "http://bit.ly/2hlceRJ">Phetch</a><div id="skills">
-                <ul>
-                  <li>Swift</li>
-                  <li>iOS SDK</li>
-                  <li>Parse</li>
-                  <li>Sketch</li>
-                  <li>Invision</li>
-                </ul>
-              </div></span>iOS Application that helps tracking commodities, tasks and expenses in shared households.<br>
-
-            </li>
-
-            <li><span id="title"><a href = "">Data Science</a><div id="skills">
-                <ul>
-                  <li>Python</li>
-                  <li>Numpy</li>
-                </ul>
-              </div></span>
-            Maximum Likelihood Estimation on Unigram and Bigram Models of Data on English Text Dataset<br>   
-            </li>
-
-            <li><span id="title"><a href = "">Analyzing Yelp Reviews</a><div id="skills">
-                <ul>
-                  <li>Python</li>
-                  <li>Numpy</li>
-                </ul>
-              </div></span>
-            Maximum Likelihood Estimation on Unigram and Bigram Models of Data on English Text Dataset<br>   
-            </li>
-
-            <li><span id="title"><a href = "">Team based matchup analysis for DotA 2</a><div id="skills">
-                <ul>
-                  <li>Python</li>
-                  <li>Numpy</li>
-                </ul>
-              </div></span>
-            Maximum Likelihood Estimation on Unigram and Bigram Models of Data on English Text Dataset<br>   
-            </li>
-        </ul>
-    </section>
-  </div>
+    <portfolio></portfolio>
 </body>
 </html>

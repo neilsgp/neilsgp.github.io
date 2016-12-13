@@ -1,0 +1,16 @@
+<section id = "projects" ng-repeat="project in portfolio.projects">
+    <ul>
+        <li>
+          <span id="title">
+            {{project.name}}
+            <br>
+            <span id="skills" ng-repeat="skill in project.skills" >
+                {{skill}}
+            </span>
+          </span>
+          <br>
+          {{project.description}}
+          <br>
+        </li>
+    </ul>
+</section>
