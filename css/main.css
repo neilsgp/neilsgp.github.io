@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Lora|Rubik');
 
 html,body{
   max-width: 100%;
@@ -21,13 +22,17 @@ a:hover{
   border-bottom-style:dotted;
 }
 
+a:visited{
+  text-decoration: none;
+}
+
 .container{ 
   margin-left: auto;
   margin-right: auto;
   margin-top: 90px;
   -webkit-font-smoothing: antialised;
   -text-rendering: optimizeLegibility;
-  max-width: 960px;
+  max-width: 800px;
 }
 
 #header{
@@ -38,11 +43,14 @@ a:hover{
 }
 
 #header h1{
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Rubik', serif;
+  text-transform: uppercase; 
   font-size: 30px;
-  letter-spacing: 0.3px;  
+  letter-spacing: 1px;  
   color: #2c3e50;
   background-color: #f1c40f;
+  margin-left: auto;
+  margin-right: auto;
   padding-top:10px;
   padding-bottom:10px;
   padding-left: -10px;
@@ -50,6 +58,10 @@ a:hover{
   word-spacing: 5px;
   max-width: 300px;
   text-align: center;
+}
+
+#header a{
+  color: #f1c40f;
 }
 
 .border{
@@ -81,8 +93,8 @@ a:hover{
 #title{
   font-weight: bold;  
   color: white;
-  font-family: 'Roboto Slab', serif;
-  letter-spacing: 0.5px;
+  font-family: 'Lora', serif;
+  letter-spacing:1.5px;
 }
 
 #skills{
