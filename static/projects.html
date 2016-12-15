@@ -2,7 +2,7 @@
     <ul>
         <li>
           <span id="title">
-            {{project.name}}
+            <a ng-href="{{project.link}}">{{project.name}}</a>
             <br>
             <span id="skills" ng-repeat="skill in project.skills" >
                 {{skill}}

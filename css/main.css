@@ -12,7 +12,7 @@ html,body{
 
 a{
   text-decoration: none;
-  color: #f1c40f;
+  color: white;
   padding-bottom: 1px;
 }
 
@@ -41,8 +41,14 @@ a:hover{
   font-family: 'Roboto Slab', serif;
   font-size: 30px;
   letter-spacing: 0.3px;  
-  color: white;
+  color: #2c3e50;
+  background-color: #f1c40f;
+  padding: 10px;
+  width: 300px;
+  text-align: center;
+  border-radius: 2px; 
 }
+
 .border{
   width: 230px;
   border-bottom: 2px solid #f1c40f;
@@ -52,6 +58,7 @@ a:hover{
 
 #header #blurb{
   font-size: 18px;
+  padding-top: 20px;
 }
 
 #projects{

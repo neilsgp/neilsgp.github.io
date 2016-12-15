@@ -29,31 +29,35 @@
 	var listOfProjects = [
 		{
 			name:"Friends and Food",
-			skills:["Node JS", "Mongoose", "Express JS", "Sketch", "Invision"],
-			description: "Web application that pairs you with friends in your network to get food with based on your personalised schedule."
+			link: "http://friendsnfood.herokuapp.com/",
+			skills:["Node JS", "Mongoose", "Express JS"],
+			description: "Mobile first web application that pairs you with friends in your network to get food with based on your personalised schedule."
 		},
 		{
 			name:"Taskr",
-			skills:["Node JS", "Mongoose", "Express JS", "Sketch", "Invision"],
+			skills:["Android SDK", "Java", "Parse"],
 			description: "Android Application for task allocation and management amongst friends living in shared households."
 		},
 		{
 			name:"Phetch",
-			skills:["Node JS", "Mongoose", "Express JS", "Sketch", "Invision"],
+			skills:["Swift", "iOS SDK", "Parse"],
+			link: "https://thatssophetch.github.io/",	
 			description: "iOS Application that helps tracking commodities, tasks and expenses in shared households."
 		},
 		{
-			name:"Data Science",
-			skills:["Python", "Numpy"],
-			description: "Maximum Likelihood Estimation on Unigram and Bigram Models of Data on English Text Dataset"
-		},
-		{
 			name:"Analyzing Yelp Reviews",
+			link: "/Files/yelpRating.pdf",
 			skills:["Python", "Numpy"],
-			description: "Maximum Likelihood Estimation on Unigram and Bigram Models of Data on English Text Dataset"
+			description: "Predicting Yelp Ratings using textual analysis of reviews using Linear Regression."
 		},
 		{
 			name:"Team based matchup analysis for DotA 2",
+			link: "/Files/dota2paper.pdf",
+			skills:["Python", "Numpy"],
+			description: "Predicting team performances and effective character combinations in DotA 2 matches using stepwise regression."
+		},
+		{
+			name:"Data Science",
 			skills:["Python", "Numpy"],
 			description: "Maximum Likelihood Estimation on Unigram and Bigram Models of Data on English Text Dataset"
 		}	
