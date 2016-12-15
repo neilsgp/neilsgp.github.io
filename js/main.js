@@ -35,6 +35,7 @@
 		},
 		{
 			name:"Taskr",
+			link:"https://github.com/ucsdCSE110wi16/CSE110M260T16",
 			skills:["Android SDK", "Java", "Parse"],
 			description: "Android Application for task allocation and management amongst friends living in shared households."
 		},
