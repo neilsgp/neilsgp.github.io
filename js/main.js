@@ -30,7 +30,7 @@
 		{
 			name:"Friends and Food",
 			link: "http://friendsnfood.herokuapp.com/",
-			skills:["Node JS", "Mongoose", "Express JS"],
+			skills:["HTML5/CSS", "JavaScript","Node JS", "MonogDB/Mongoose", "ExpressJS"],
 			description: "Mobile first web application that pairs you with friends in your network to get food with based on your personalised schedule."
 		},
 		{
