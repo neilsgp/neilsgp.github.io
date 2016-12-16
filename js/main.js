@@ -30,7 +30,7 @@
 		{
 			name:"Friends and Food",
 			link: "http://friendsnfood.herokuapp.com/",
-			skills:["HTML5/CSS", "JavaScript","Node JS", "MonogDB/Mongoose", "ExpressJS"],
+			skills:["HTML5/CSS", "JavaScript","NodeJS", "MonogDB/Mongoose", "ExpressJS"],
 			description: "Mobile first web application that pairs you with friends in your network to get food with based on your personalised schedule."
 		},
 		{
@@ -60,7 +60,7 @@
 		{
 			name:"Data Science",
 			skills:["Python", "Numpy"],
-			description: "Maximum Likelihood Estimation on Unigram and Bigram Models of Data on English Text Dataset"
+			description: "Maximum Likelihood Estimation on Unigram and Bigram Models of Data on English Text Dataset."
 		}	
 	];
 
