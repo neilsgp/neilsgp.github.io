@@ -1,28 +1,84 @@
-<html ng-app = "portfolio">
-<head lang="en">
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Homepage of Neil Sengupta at UC San Diego">
-  
-  <title>Neil Sengupta</title>
-  
-  <link rel="stylesheet" type="text/css" href="css/main.css"></link>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script data-require="angular.js@1.2.x" src="http://code.angularjs.org/1.2.15/angular.js" data-semver="1.2.15"></script>
-  <script src="js/main.js"></script>
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-79527550-1', 'auto');
-    ga('send', 'pageview');
-  </script>
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"></link>
+	<link type="text/css" rel="stylesheet" href="main.css"></link>
 </head>
 <body>
-    <portfolio></portfolio>
+	<div class="container">
+		<div class="row">
+				<div class="twelve columns">
+				<img id="profile" height="25%" src="profile.jpg">
+		  		<div class = "header">
+		  			<p><span id="intro"><b>Neil Sengupta &#128075;<br> Software Engineer and Designer</b></span><br><br> I'm a senior studying computer science at UC San Diego. I'm interested in System Design, Human Computer Interaction and Artificial Intelligence. I've worked at Inmar and San Diego Supercomputer Center at the past. I also recently worked on a research project that was accepted to ACM CHI 2018. I'm interested in building elegant technology to help solve complex problems.
+		  			</p>
+		  		</div>
+				</div>
+		</div>
+
+		<div class = "grid">
+			<div class="row">
+			    <div class="twelve columns">
+			    	<div class="box">
+			    		<div class = "desc">
+							<p id="title"><b>Make it Concrete: Supporting Example-Centric Visual Design Feedback</b></p>
+							<p id="blurb">During this research project, I helped design user studies and prototypes
+							to determine how the efficacy of user feedback on the quality visual designs would improve given examples of previously graded visual design examples.
+							<p>Read Case Study&rarr;</p>
+						</p>
+						</div>
+			    	</div>
+			    </div>
+		  	</div>
+
+			<div class="row">
+			    <div class="twelve columns">
+			    	<div class="box">
+			    		<div class = "desc">
+							<p id="title"><b>Friends and Food</b></p>
+							<p id="blurb">Worked on the initial need finding, prototype design and full-stack development of this mobile first web application&rarr;</p>
+							<p>Read Case Study&rarr;</p>
+						</div>
+			    	</div>
+			    </div>
+		  	</div>
+
+		  	<div class="row">
+			    <div class="twelve columns">
+			    	<div class="box">
+			    		<div class = "desc">
+							<p id="title"><b>Phetch</b></p>
+							<p id="blurb">Worked on the initial need finding, prototype design and full-stack development of this iOS application</p>
+							<p>Read Case Study&rarr;</p>
+						</div>
+			    	</div>
+			    </div>
+		  	</div>
+
+		  	<div class="row">
+			    <div class="twelve columns">
+			    	<div class="box">
+			    		<div class = "desc">
+							<p id="title"><b>Inmar</b></p>
+							<p id="blurb">Data Engineering Intern for Summer 2017</p>
+							<p>Read about my work&rarr;</p>
+						</div>
+			    	</div>
+			    </div>
+		  	</div>
+	  	</div>
+
+	  	<div class = "row">
+		  	<div class = "Projects">
+		  		<p id="intro"><b>Side Projects</b></p>
+		  		<p><span id="big"><b>Dota 2 Game analyis</b></span> - Classifying Dota 2 game outcomes using early game statistics.
+		  		Feature Engineering experimented using mathematical models to account for counter-matchups and team synergy. Used
+		  		Multilayer Perceptron model for classfication.</p>
+		  		<br>
+
+		  		<p><span id="big"><b>Tasker</b></span> - Interface development and Backend code using Android SDK.</p>
+		  		<br>
+		  	</div>
+	  	</div>
+	</div>
 </body>
 </html>
