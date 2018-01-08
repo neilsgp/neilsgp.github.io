@@ -1,41 +1,54 @@
 <html>
 <head>
+	<title>Neil Sengupta</title>
 	<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"></link>
 	<link type="text/css" rel="stylesheet" href="main.css"></link>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type='text/javascript'>
+		$.getJSON('http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=neilsgp&api_key=2037709ac917c329538a8094455dfcbf&format=json', function(data) {
+				var track = data.recenttracks.track[0]
+				artist = track.artist
+				link = track.image[1]
+				console.log(link['#text'])
+
+				$('#lastfm').html(track.name + " by " + track.artist["#text"])
+				$("#albumart").attr("src", link["text"].toString());
+			});
+	</script>
 </head>
 <body>
 	<div class="container">
 		<div class="row">
 				<div class="twelve columns">
-				<img id="profile" height="25%" src="profile.jpg">
-		  		<div class = "header">
-		  			<p><span id="intro"><b>Neil Sengupta &#128075;<br> Software Engineer and Designer</b></span><br><br> I'm a senior studying computer science at UC San Diego. I'm interested in System Design, Human Computer Interaction and Artificial Intelligence. I've worked at Inmar and San Diego Supercomputer Center at the past. I also recently worked on a research project that was accepted to ACM CHI 2018. I'm interested in building elegant technology to help solve complex problems.
-		  			</p>
-		  		</div>
+					<img id="profile" height="15%" src="me.png">
+			  		<div class = "header">
+			  			<p><span id="intro"><b>Neil Sengupta &#128075;<br> Software Engineer and Designer</b></span><br><br> I'm a senior studying Computer science at UC San Diego. I'm interested in System Design, Human Computer Interaction and Artificial Intelligence. I've worked at Inmar and San Diego Supercomputer Center at the past. I also recently worked on a research project that was accepted to ACM CHI 2018. I'm interested in designing and building elegant technology to help solve complex problems.
+			  			</p>
+			  		</div>
 				</div>
 		</div>
 
 		<div class = "grid">
 			<div class="row">
 			    <div class="twelve columns">
-			    	<div class="box">
+			    	<div class="box" id="research">
 			    		<div class = "desc">
 							<p id="title"><b>Make it Concrete: Supporting Example-Centric Visual Design Feedback</b></p>
 							<p id="blurb">During this research project, I helped design user studies and prototypes
-							to determine how the efficacy of user feedback on the quality visual designs would improve given examples of previously graded visual design examples.
-							<p>Read Case Study&rarr;</p>
+							to determine how the efficacy of user feedback on the quality of visual designs would improve, given examples of previously graded examples. Paper accepted to CHI 2018: SIGCHI Conference on Human Factors in Computing Systems.
+							<p>Read Research Paper&rarr;</p>
 						</p>
 						</div>
 			    	</div>
 			    </div>
 		  	</div>
 
-			<div class="row">
-			    <div class="twelve columns">
-			    	<div class="box">
+		  	<div class="row">
+				<div class="twelve columns">
+			    	<div class="box" id="fnf">
 			    		<div class = "desc">
 							<p id="title"><b>Friends and Food</b></p>
-							<p id="blurb">Worked on the initial need finding, prototype design and full-stack development of this mobile first web application&rarr;</p>
+							<p id="blurb">Worked on the initial need finding, prototype design and full-stack development of this mobile first web application.</p>
 							<p>Read Case Study&rarr;</p>
 						</div>
 			    	</div>
@@ -47,16 +60,13 @@
 			    	<div class="box">
 			    		<div class = "desc">
 							<p id="title"><b>Phetch</b></p>
-							<p id="blurb">Worked on the initial need finding, prototype design and full-stack development of this iOS application</p>
+							<p id="blurb">Worked on the initial need finding, prototype design and full-stack development of this iOS application.</p>
 							<p>Read Case Study&rarr;</p>
 						</div>
 			    	</div>
 			    </div>
-		  	</div>
-
-		  	<div class="row">
 			    <div class="twelve columns">
-			    	<div class="box">
+			    	<div class="box" id="inmar">
 			    		<div class = "desc">
 							<p id="title"><b>Inmar</b></p>
 							<p id="blurb">Data Engineering Intern for Summer 2017</p>
@@ -69,12 +79,10 @@
 
 	  	<div class = "row">
 		  	<div class = "Projects">
-		  		<p id="intro"><b>Side Projects</b></p>
-		  		<p><span id="big"><b>Dota 2 Game analyis</b></span> - Classifying Dota 2 game outcomes using early game statistics.
-		  		Feature Engineering experimented using mathematical models to account for counter-matchups and team synergy. Used
-		  		Multilayer Perceptron model for classfication.</p>
+		  		<p id="intro"><b>&#9889 Side Projects</b></p>
+		  		<p><span id="big"><b>Dota 2 Game analyis </b></span> - Analysis of DoTa2 games using early match statistics to predict outcomes using models for team synergy and counter-matchups.</p>
 		  		<br>
-		  		<p><span id="big"><b>Tasker</b></span> - Interface development and Backend code using Android SDK.</p>
+		  		<p><span id="big"><b>Tasker</b></span> - Interface and Backend development for mobile application using Android SDK.</p>
 		  		<br>
 		  	</div>
 	  	</div>

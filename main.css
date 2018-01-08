@@ -1,18 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+@import url('https://fonts.googleapis.com/css?family=Heebo');
 
 html{
-	background: linear-gradient(#1a237e, #00838f);
+	/*background: linear-gradient(#1a237e, #00838f);*/
 }
 
 *{
-	font-family: 'Inconsolata', sans-serif;
-	/* Adjust font size */
+	font-family: 'Heebo', sans-serif;
     font-size: 100%;
     -webkit-text-size-adjust: 100%;
-    /* Font varient */
     font-variant-ligatures: none;
     -webkit-font-variant-ligatures: none;
-    /* Smoothing */
     text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: grayscale;
     font-smoothing: antialiased;
@@ -25,16 +22,18 @@ html{
 	margin-top: 50px;
 	border-radius: 5px;
 	padding: 50px 50px 50px 50px;
-	max-width: 1000px;
+	max-width: 960px;
 }
 
 #profile{
 	margin-top: 20px;
+	position: relative;
 }
 
 #intro{
 	color: #2962ff;
 	font-size: 22px;
+	margin-left: auto;
 }
 
 .grid{
@@ -44,28 +43,49 @@ html{
 .header{
 	margin-top: 30px;
 	font-size: 20px;
+	margin-bottom: 80px;
 }
 
 img{
 	max-height: 100%;
 	width: auto;
-	border-radius: 1.5%;
-	box-shadow: 0 4px 2px -2px rgba(0,0,0,0.1);
 }
 
 .box{
-	/*background: #2962ff;*/
 	border-radius: 3px;
-	max-width: 800px;
+	max-width: 700px;
 	margin-left: auto;
 	margin-right: auto;
 	height: 400px;
 	margin-bottom: 80px;
 	font-size: 18px;
 	color: white;
-	background: linear-gradient(#536dfe, #2196f3), url('cover.png')  no-repeat center;
+	background: linear-gradient(rgba(22,34,42,0.8),rgba(58,96,115,1));
 	background-size: cover;
 	box-shadow: 0 4px 2px -2px rgba(0,0,0,0.2);
+}
+
+#research{
+	background: linear-gradient(rgba(75,108,183,.7), rgba(24,40,72, .7)), url('research.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#fnf{
+	background: linear-gradient(rgba(75,108,183,.8), rgba(24,40,72, .8)), url('fnf.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}	
+
+#inmar{
+	background: linear-gradient(rgba(75,108,183,.8), rgba(24,40,72, .8)), url('inmar.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.box:hover{
+	transform: scale(1.027);
+	transition-duration: 0.2s;
 }
 
 #title{
@@ -91,7 +111,7 @@ img{
 #big{
 	position: relative;
 	z-index: 1;
-	font-size: 22px;
+	font-size: 20px;
 }
 
 #big:after{
@@ -99,11 +119,11 @@ img{
 	position: absolute;
 	content: "\00a0";
 	z-index: -1;
-	bottom: 0;
+	bottom: 5;
 	width: calc(100%);
-	height: 35%;
+	height: 20%;
 	display: block;
-	left: 7px;
+	/*left: 8px;*/
 }
 
 ul{
