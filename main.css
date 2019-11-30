@@ -4,7 +4,7 @@
 
 *{
     font-size: 100%;
-    background-color: #ffc6c7;
+    background-color: #ffdbc5;
     -webkit-text-size-adjust: 100%;
     font-variant-ligatures: none;
     -webkit-font-variant-ligatures: none;
@@ -35,7 +35,7 @@ html,body{
 	font-weight: 900;
 	width: px;
 	padding-bottom: 50px;
-	color: #090057;
+	color: #1b2a49;
 }
 
 .desc{
