@@ -4,7 +4,7 @@
 
 *{
     font-size: 100%;
-    background-color: #ffe7d1;
+    background-color: #ffc6c7;
     -webkit-text-size-adjust: 100%;
     font-variant-ligatures: none;
     -webkit-font-variant-ligatures: none;
@@ -15,34 +15,46 @@
     text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
 }
 
+html,body{
+	margin:0;
+	padding:0;
+	background-color: #ffe7d1;
+}
+
 @font-face {
 	src: url('./assets/GT-America/gt-america-bold.woff') format('woff');
 	font-family: GT-America;
 	font-weight: 700;
 }
 
-.container{
-	font-weight: 500;
-	border-radius: 5px;
-	padding: 40px 50px 50px 50px;
-	max-width: 960px;
-	font-size: 16px;
-
-}
-
 .name{
 	font-family: 'GT-America', sans-serif;
 	font-size: 65px;
-	margin-top: 80px;
+	margin-top: 50px;
 	line-height: 66px;
 	font-weight: 900;
 	width: px;
+	padding-bottom: 50px;
+	color: #090057;
 }
 
 .desc{
 	font-family: 'Karla', sans-serif;
 	padding-top: 40px;
+	padding-left: 12%;
+	padding-right: 10%;
 	font-size: 20px;
 	font-weight: 500;
 	letter-spacing: -0.6px;
+	line-height: 30px;
+	padding-bottom: 5%;
+	color: #17223b;
+}
+
+a{
+	color:black;
+}
+
+a:visited{
+	color: black;
 }
