@@ -2,16 +2,28 @@
 <head>
 	<title>Neil Sengupta</title>
 	<link type="text/css" rel="stylesheet" href="main.css"></link>
+	<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css"></link>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type='text/javascript'>
-		$.getJSON('http://ws.audioscrobbler.com/2.0/?method=user.getweeklyartistchart&user=neilsgp&api_key=2037709ac917c329538a8094455dfcbf&format=json', function(data) {
-				var track = data.recenttracks.track[0]
-				artist = track.artist
-				link = track.image[1]
-				console.log(link['#text'])
-
-				$('#lastfm').html(track.name + " by " + track.artist["#text"])
-				$("#albumart").attr("src", link["text"].toString());
+		$.getJSON('http://ws.audioscrobbler.com/2.0/?method=user.gettopalbums&user=neilsgp&period=7day&api_key=2037709ac917c329538a8094455dfcbf&format=json')
+			.done(function(data) {
+				top3 = data['topalbums']['album'].slice(0,3)
+				top3.forEach(element => {
+					var image = document.createElement("img");;
+					var album_link = element["url"]
+					console.log(album_link)
+					link = element["image"][2]['#text'];
+					let imageStyle = "width:150px; height:150px;border-radius:1%;margin-right:2%;"
+					image.setAttribute('src', link);
+					image.setAttribute('style', imageStyle);
+					var coverArt = document.createElement("a");
+					coverArt.setAttribute('href', album_link)
+					coverArt.appendChild(image);
+					$('#albums').append(coverArt);
+				})
+			})
+			.fail(function() {
+				console.log("No scrobbles")
 			});
 	</script>
 </head>
@@ -19,22 +31,22 @@
 		<div class = "desc">
 			<div class = "name"> <b>Neil <br>Sengupta </b> </div>
 
-			<span style="color:#1b2a49"><b>Education</b></span><br>
-			Current CSE graduate student at UC San Diego, previous undergrad at UC San Diego. <br>
+			<span style="color:#69779b"><b>Education</b></span><br>
+			Previously a CSE graduate student and undergraduate at UC San Diego <br>
 			
 			<br>
 
-			<span style="color:#1b2a49"><b>Work experience</b></span> <br>
-			Uber, Inmar, San Diego Supercomputer Center <br>
+			<span style="color:#69779b"><b>Work experience</b></span> <br>
+			SnapIoT, Uber, Inmar, San Diego Supercomputer Center <br>
 			
 			<br>
 
-			<span style="color:#1b2a49"><b>Publications</b></span> <br>
+			<span style="color:#69779b"><b>Publications</b></span> <br>
 			Make it Concrete: Supporting Example-Centric Visual Design Feedback - CHI'18 <br>
 
 			<br>
 
-			<span style="color:#1b2a49"><b>Selected Projects</b></span> <br>
+			<span style="color:#69779b"><b>Selected Projects</b></span> <br>
 			Mayan Multicamera 3D SLAM Cave + Tunnel Mapper (ROS + Python)<br>
 			Photographic Memory for Alzheimers Intervention (Myo-JS + GlassAPI + PyFlask)<br>
 			Triton Overwatch (ReactJS, NodeJS, Express, MongoDB)<br>
@@ -43,17 +55,30 @@
 
 			<br>
 
-			<span style="color:#1b2a49"><b>Technical Interests</b></span> <br>
-			Data engineering, backend engineering, system design, reinforcement learning - AI, human computer interaction.
+			<span style="color:#69779b"><b>Technical Interests</b></span> <br>
+			Data engineering, backend engineering, system design, reinforcement learning - AI, human computer interaction
 
 			<br><br>
 
-			I'm currently listening to. <br>
-			Outside work, I enjoy photography, going to concerts and music-production. <br> Feel free to get in touch!
+			I'm currently listening to &nbsp; &mdash;<br>
+
+			<ul id = "albums">
+				<!-- <li class="cover-art"></li>
+				<li class="cover-art"></li>
+				<li class="cover-art"></li> -->
+			</ul>
+
+			<br> 
+
+			Outside work, I enjoy hosting radio-shows, photography, going to concerts and music-production <br> Feel free to get in touch!
 
 			<br><br>
 
-			<span style="color:#1b2a49"><b> <a href="./resume2020.pdf">Resume</a> / <a href="http://www.github.com/neilsgp">@Github </a> / <a href="http://www.twitter.com/nesengup">@Twitter</a> </b></span>
+			<span style="color:#69779b"><b> <a href="./resume2020.pdf">Resume</a> / 
+				<a href="http://www.github.com/neilsgp">Github </a> / 
+				<a href="http://www.twitter.com/nesengup">Twitter</a> </b> /
+				<a href="https://spinitron.com/KSDT/dj/146244/Senginel">DJ-sets</a> 
+			</span>
 		</div>
 </body>
 </html>

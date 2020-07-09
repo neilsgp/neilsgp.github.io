@@ -4,7 +4,7 @@
 
 *{
     font-size: 100%;
-    background-color: #ffdbc5;
+    background-color: #010101;
     -webkit-text-size-adjust: 100%;
     font-variant-ligatures: none;
     -webkit-font-variant-ligatures: none;
@@ -18,12 +18,18 @@
 html,body{
 	margin:0;
 	padding:0;
-	background-color: #ffe7d1;
+	background-color: black;
 }
 
 @font-face {
 	src: url('./assets/GT-America/gt-america-bold.woff') format('woff');
 	font-family: GT-America;
+	font-weight: 700;
+}
+
+@font-face {
+	src: url('./assets/hk-grotesk/HKGrotesk-MediumLegacy.otf') format('opentype');
+	font-family: grotesk-medium;
 	font-weight: 700;
 }
 
@@ -35,26 +41,31 @@ html,body{
 	font-weight: 900;
 	width: px;
 	padding-bottom: 50px;
-	color: #1b2a49;
+	color: #69779b;
 }
 
 .desc{
-	font-family: 'Karla', sans-serif;
+	font-family: 'grotesk-medium', sans-serif;
 	padding-top: 40px;
 	padding-left: 12%;
 	padding-right: 10%;
-	font-size: 20px;
+	font-size: 22px;
 	font-weight: 500;
 	letter-spacing: -0.6px;
-	line-height: 30px;
+	line-height: 35px;
 	padding-bottom: 5%;
-	color: #17223b;
+	color: #f0ece2;
 }
 
 a{
-	color:black;
+	color:#69779b;
+	text-decoration: none;
 }
 
 a:visited{
-	color: black;
+	color: #69779b;
+}
+
+#albums{
+	padding-left: 0;
 }
