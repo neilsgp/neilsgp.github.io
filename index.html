@@ -7,17 +7,18 @@
 	<script type='text/javascript'>
 		$.getJSON('http://ws.audioscrobbler.com/2.0/?method=user.gettopalbums&user=neilsgp&period=7day&api_key=2037709ac917c329538a8094455dfcbf&format=json')
 			.done(function(data) {
+				allAlbums = data['topalbums']['album']
+				allAlbums.sort(() => Math.random() - 0.5);
 				top3 = data['topalbums']['album'].slice(0,3)
 				top3.forEach(element => {
 					var image = document.createElement("img");;
-					var album_link = element["url"]
-					console.log(album_link)
+					var albumLink = element["url"]
 					link = element["image"][2]['#text'];
 					let imageStyle = "width:150px; height:150px;border-radius:1%;margin-right:2%;"
 					image.setAttribute('src', link);
 					image.setAttribute('style', imageStyle);
 					var coverArt = document.createElement("a");
-					coverArt.setAttribute('href', album_link)
+					coverArt.setAttribute('href', albumLink)
 					coverArt.appendChild(image);
 					$('#albums').append(coverArt);
 				})
@@ -56,21 +57,17 @@
 			<br>
 
 			<span style="color:#69779b"><b>Technical Interests</b></span> <br>
-			Data engineering, backend engineering, system design, reinforcement learning - AI, human computer interaction
+			Data engineering, Backend engineering, System Design, Computer Vision, NLP, <br> Reinforcement Learning, Human Computer Interaction
 
 			<br><br>
 
 			I'm currently listening to &nbsp; &mdash;<br>
 
-			<ul id = "albums">
-				<!-- <li class="cover-art"></li>
-				<li class="cover-art"></li>
-				<li class="cover-art"></li> -->
-			</ul>
+			<ul id = "albums"></ul>
 
 			<br> 
 
-			Outside work, I enjoy hosting radio-shows, photography, going to concerts and music-production <br> Feel free to get in touch!
+			Outside work I enjoy hosting radio-shows, photography, going to concerts and music-production. <br> Feel free to get in touch!
 
 			<br><br>
 
