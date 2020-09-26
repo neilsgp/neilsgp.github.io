@@ -7,9 +7,9 @@
 	<script type='text/javascript'>
 		$.getJSON('http://ws.audioscrobbler.com/2.0/?method=user.gettopalbums&user=neilsgp&period=7day&api_key=2037709ac917c329538a8094455dfcbf&format=json')
 			.done(function(data) {
-				allAlbums = data['topalbums']['album']
+				allAlbums = data['topalbums']['album'].slice(0,10)
 				allAlbums.sort(() => Math.random() - 0.5);
-				top3 = data['topalbums']['album'].slice(0,3)
+				top3 = allAlbums.slice(0,3)
 				top3.forEach(element => {
 					var image = document.createElement("img");;
 					var albumLink = element["url"]
